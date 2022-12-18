@@ -1,0 +1,7 @@
+CREATING SPRING HOME COntoller 	AND VIEW PROCESS
+--------------------------------------------------------
+1.create controller cls
+2.create controller m\ethod
+3.add request mapping to controller method
+4.return view name
+5.develop view page.jsp
