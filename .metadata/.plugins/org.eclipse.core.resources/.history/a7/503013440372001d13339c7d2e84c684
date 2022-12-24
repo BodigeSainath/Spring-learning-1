@@ -1,0 +1,6 @@
+@Component("nameofcls_with_camelcase") --- used to define a cls as a bean 
+@Qualifier("name_of_cls_which_implemnets_beancls)"  -- when there are multiple cls implementing @component bean
+spr confuse. so this allow DI 
+@Autowired - used for DI when spr scan for component if any cls implementing bean cls then spr automt'ly inject
+@PostConstruct - it executes after all the DI happens
+@predestroy - it executes after spr cintainer close

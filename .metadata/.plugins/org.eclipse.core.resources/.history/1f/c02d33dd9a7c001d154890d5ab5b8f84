@@ -1,0 +1,25 @@
+package com.udemy.sec7;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+
+@EnableWebMvc
+@Configuration
+//@ComponentScan("com.udemy.sec7")
+@PropertySource("classpath:sport.properties")
+public class ConfigurationAnntTest {
+
+	//define bean for our configanntimpl
+	@Bean
+	public FortuneService configAnntImpl(){
+		return new ConfigAnntImpl();
+	}
+	//define bean fr our swincoach nd inject dep 
+	@Bean
+	public Coach swinCoach(){
+		return new SwinCoach(configAnntImpl());
+	}
+}
