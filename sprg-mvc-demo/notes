@@ -1,0 +1,37 @@
+CREATING SPRING HOME COntoller 	AND VIEW PROCESS
+--------------------------------------------------------
+1.create controller cls
+2.create controller m\ethod
+3.add request mapping to controller method
+4.return view name
+5.develop view page.jsp
+
+-========================================
+READING HTML FORM DATA DEV PROC
+
+1.create controller class
+2.show HTML form
+a.create comtoller cls to show html form 
+b.create view page fr html form 
+3.Process HTML fomr
+a.create comtoller cls to process html form 
+b.develop view page fr controller
+
+* HTTPServletRequest - Controller methods are flexible in passing parameters, if we need to read form data in 
+Controller cls code then we can use HTTPServletRequest
+*Model - Model is jst a container to hold the form data 
+
+--------------------------------------------------------
+ADDING DATA TO SPRING "MODEL"
+
+code ex // Helloworldcntl lin19
+create new met to process form data
+read form data: studentName
+convert name to uppercase
+add uppercase version to model as res
+--------------------------------------------------------------------
+@RequestParam
+this helps us to read form data and bind automaticallly to thr variable
+------------------------------------------------
+
+To Avoid ambiguty btw mappings we use @ReqMap in Controller level to avoid same mapping btw 2 controllers
