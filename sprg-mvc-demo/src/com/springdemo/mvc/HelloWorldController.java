@@ -13,9 +13,9 @@ public class HelloWorldController {
 	//method to show form on page when showForm url hits
 	@RequestMapping("/showForm") 
 	public String showForm(){
-		return "helloworld-view";
+		return "helloworld-view"; 
 	}
-	
+
 	//to handle processForm call 
 	@RequestMapping("/processForm")
 	public String processForm(){
