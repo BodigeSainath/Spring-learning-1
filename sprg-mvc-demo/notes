@@ -1,3 +1,5 @@
+@ModelAttribute - it is a bean used to hold form data nd giv supp to data binding
+
 CREATING SPRING HOME COntoller 	AND VIEW PROCESS
 --------------------------------------------------------
 1.create controller cls
@@ -35,3 +37,36 @@ this helps us to read form data and bind automaticallly to thr variable
 ------------------------------------------------
 
 To Avoid ambiguty btw mappings we use @ReqMap in Controller level to avoid same mapping btw 2 controllers
+
+=======================================================================================
+SPRING MVC FORM TAGS
+
+form tags are configurable and reusable  
+they make use of data binding - autom setting/geting data from java beans/obj
+
+Diffenret form tags
+form:form - container
+    :input - text field
+    :textarea - multiline text
+    select - dropdown
+    etc..
+ 
+* ref tags in jsp
+<.. taglib prefix="form" uri = http://...">
+
+* <form:form modelAttribute ="nameincntl">
+path = lastname // spg will use it to call getters/setter to lastname var
+
+--------------------------------------------------
+FORM DEV Proc
+1.TEXTFIELD
+creste student cls
+create student cntl cls
+crt html
+crt form processing code
+crt confirmation page
+
+2.drop down/radiobuttons etc
+update html form
+update student cls -gett/setter fr new props
+upadte confirmation page

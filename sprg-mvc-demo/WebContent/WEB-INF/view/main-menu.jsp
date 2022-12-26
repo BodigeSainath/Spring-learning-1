@@ -9,5 +9,6 @@
 <body>
 <h2>hello Welcome</h2>
 <a href="hello/showForm">Click to helloworld form</a>
+<a href="student/showForm">Click to studnet form</a>
 </body>
 </html>
