@@ -4,14 +4,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Welcome MVC</title>
+<title>Insert title here</title>
 </head>
 <body>
-<h2>hello Welcome</h2>
-<a href="hello/showForm">Click to helloworld form</a><br/><br/>
-<a href="student/showForm">Click to studnet form</a><br/><br/>
- <a href="customer/showForm">Click to customer form</a><br/>
-  <a href="/(">Click to employee form</a><br/> 
-  
+Welcomr tp emp form
 </body>
 </html>

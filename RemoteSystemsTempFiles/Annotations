@@ -1,3 +1,6 @@
+JavaEE -- it is a combinatn of servlets,jsp,jdbc,enterprise jabab bean, jav messaging service
+Jakarta is a separate project nt belong to oracle. from jakarta7 JAVAX is replced with JAKARTA(package import)
+
 @Component("nameofcls_with_camelcase") --- used to define a cls as a bean 
 @Qualifier("name_of_cls_which_implemnets_beancls)"  -- when there are multiple cls implementing @component bean
 spr confuse. so this allow DI 
@@ -7,3 +10,14 @@ spr confuse. so this allow DI
 @Configuration  - eliminates use of XML. it is the Java configuration class 
 @ComponentScan("package path") -- used to define the package for spr configtn
 In main we use AnnotationConfigApplicationContext instead of ClassPathXMl for java based configtn cls(no xml)
+* HTTPServletRequest - Controller methods are flexible in passing parameters, if we need to read form data in 
+Controller cls code then we can use HTTPServletRequest
+*Model - Model is jst a container to hold the form data
+@InitBinder -- InitBinder method will pre process the request before it going to cntl. ex- in form paswd given as whitespace
+then this is we can pre process and delete whitespace//(CustomerCntl)  
+
+@RequestParam
+this helps us to read form data and bind automaticallly to thr variable
+
+To Avoid ambiguty btw mappings we use @ReqMap in Controller level to avoid same mapping btw 2 controllers
+

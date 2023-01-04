@@ -70,3 +70,26 @@ crt confirmation page
 update html form
 update student cls -gett/setter fr new props
 upadte confirmation page
+
+==========================================================================================
+APPLYING VALIDATION TO MVC FORM TAGS
+
+ working - we hv a form goes to controller, in cmtl perform validatn if all ppass goes to 
+ success otherwise goes back to form again
+ DEV PRO
+ 1.add validtn rule in customer cls
+ 2.display error msg on html form
+ 3.perform validtn in cntl cls
+ 4.update confirmation form page
+ ====================================================================================================
+ 
+ APPLY CUSTOM VALIDATION(OWN ANNOTATIONS]'\
+ ) TO FORM
+ DEV PRO
+ 1.create custom validatn rule
+ a. crete @CourseCode anntation
+ b. create CourseCodeConstraintValidator
+ 2.add validtn rule to cntl
+ 3.display error msg in html
+ update confitm oage
+ 	
